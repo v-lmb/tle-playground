@@ -18,7 +18,7 @@ class Satellite(Base):
     name = Column(String(100), nullable=False, unique=True)
     line1 = Column(String(100), nullable=False)
     line2 = Column(String(100), nullable=False)
-    update_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    updated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
 
     # Représentation lisible pour le debug
     def __repr__(self):
