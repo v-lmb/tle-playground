@@ -19,6 +19,7 @@ class Satellite(Base):
     line1 = Column(String(100), nullable=False)
     line2 = Column(String(100), nullable=False)
     updated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    norad_id = Column(Integer, nullable=True)
 
     # Représentation lisible pour le debug
     def __repr__(self):
