@@ -1,11 +1,10 @@
-from sqlite3 import dbapi2
-
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from sqlalchemy import select
 
 from app.database import SessionLocal
 from app.models import Satellite
+from app.schemas import SatelliteSchema
 
 # Router (équivalent d'un Blueprint Flask)
 router = APIRouter(
@@ -25,7 +24,7 @@ def get_db():
         db.close()
 
 
-@router.get("/")
+@router.get("/", response_model=list[SatelliteSchema])
 def get_satellites(db: Session = Depends(get_db)):
     """
     Retourne la liste de tous les satellites
