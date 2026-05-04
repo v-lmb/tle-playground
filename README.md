@@ -36,10 +36,10 @@ tle-playground/
 | **2** | Store in PostgreSQL (SQLAlchemy 2 + models) | ✅ Done |
 | **3** | FastAPI hello world — `/health` and `/satellites` routes | ✅ Done |
 | **4** | Alembic — schema migrations | ✅ Done |
-| **5** | Cron job — automatic ingestion | 🔧 In progress |
-| **6** | OpenAPI — auto Swagger UI documentation | ⏳ Upcoming |
+| **5** | Cron job — automatic ingestion | ✅ Done |
+| **6** | OpenAPI — auto Swagger UI documentation | ✅ Done |
 
-Updated on April 30, 2026
+Updated on May 4th, 2026
 
 ---
 
