@@ -33,11 +33,13 @@ tle-playground/
 | Step | Description | Status |
 |------|-------------|--------|
 | **1** | Fetch and parse TLE data from Celestrak | ✅ Done |
-| **2** | Store in PostgreSQL (SQLAlchemy 2 + models) | 🔧 In progress |
-| **3** | FastAPI hello world — `/health` and `/satellites` routes | ⏳ Upcoming |
+| **2** | Store in PostgreSQL (SQLAlchemy 2 + models) | ✅ Done |
+| **3** | FastAPI hello world — `/health` and `/satellites` routes | 🔧 In progress |
 | **4** | Alembic — schema migrations | ⏳ Upcoming |
 | **5** | Cron job — automatic ingestion | ⏳ Upcoming |
 | **6** | OpenAPI — auto Swagger UI documentation | ⏳ Upcoming |
+
+Updated on April 30, 2026
 
 ---
 
